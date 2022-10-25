@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: voting-app-vote-service
+  labels:
+    name: voting-app-vote-service
+    author: Ramakrihna
+spec:
+  type: LoadBalancer
+  selector:
+    name: voting-app-vote
+    author: Ramkrishna
+  ports:
+    - targetPort: 80
+      port: 80
+...

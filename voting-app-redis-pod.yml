@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-redis-pod
+  labels:
+    name: voting-app-redis-pod
+    author: Ramkrishna
+spec:
+  containers:
+    - name: voting-app-redis
+      image: redis
+      ports:
+        - containerPort: 6379
+...

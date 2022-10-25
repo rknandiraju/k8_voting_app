@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-vote-pod
+  labels:
+    name: voting-app-vote
+    author: Ramkrishna
+spec:
+  containers:
+    - name: voting-app-vote
+      image: eesprit/voting-app-vote
+      ports:
+        - containerPort: 80
+...

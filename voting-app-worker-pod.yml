@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-worker-pod
+  labels:
+    name: voting-app-worker-pod
+    author: Ramkrishna
+spec:
+  containers:
+    - name: voting-app-worker
+      image: eesprit/voting-app-worker
+...

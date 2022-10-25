@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: voting-app-result-service
+  labels:
+    name: voting-app-result-service
+    author: Ramakrihna
+spec:
+  type: LoadBalancer
+  selector:
+    name: voting-app-result-pod
+    author: Ramkrishna
+  ports:
+    - targetPort: 80
+      port: 80
+
+...

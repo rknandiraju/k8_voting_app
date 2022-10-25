@@ -1,0 +1,22 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-postgres-pod
+  labels:
+    name: voting-app-postgres
+    author: Ramkrishna
+spec:
+  containers:
+    - name: voting-app-postgres
+      image: postgres
+      env:
+        - name: POSTGRES_PASSWORD
+          value: intelliqit
+        - name: POSTGRES_USER
+          value: intelliqit
+        - name: POSTGRES_DB
+          value: mydb
+      ports:
+        - containerPort: 5432
+...
